@@ -49,25 +49,25 @@ main_marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Di
         <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_195506.jpg' target='_blank'>
           <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_195506.jpg' alt='Disney' style='width:100px; height:auto;'>
         </a>
-        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' target='_blank'>
-          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' alt='Disney' style='width:100px; height:auto;'>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' alt='Disney' style='width:100px; height:auto;'>
         </a>
       </div>
       <div style="display: flex; gap: 10px; margin-top: 10px;">
-        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' target='_blank'>
-          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' alt='Disney' style='width:100px; height:auto;'>
-        </a>
-        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' target='_blank'>
-          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' alt='Disney' style='width:100px; height:auto;'>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' target='_blank'>
+        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' alt='Disney' style='width:100px; height:auto;'>
+      </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' alt='Disney' style='width:100px; height:auto;'>
         </a>
       </div>
     <div style="display: flex; gap: 10px; margin-top: 10px;">
       <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214025.jpg' target='_blank'>
         <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214025.jpg' alt='Disney' style='width:100px; height:auto;'>
       </a>
-      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' target='_blank'>
-        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' alt='Disney' style='width:100px; height:auto;'>
-      </a>
+      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
       </div>
       <br><br>
       Mickey's Halloween Party Fireworks Extravaganza!
@@ -77,3 +77,40 @@ main_marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Di
     autoPanPadding: [30, 30],
     offset: L.point(0, 0)
   });
+  let aladin_marker = L.marker([28.41847,-81.58348],{
+    draggable: false,
+    title: "The Magic Carpets of Aladin!"
+  }).addTo(myMap);
+
+  aladin_marker.bindPopup(`
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; gap: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094237.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094237.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094250(1).jpg' target='_blank'>
+        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094250(1).jpg' alt='Disney' style='width:100px; height:auto;'>
+      </a>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094248.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094248.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094250.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094250.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+      </div>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094241.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20240929_094241.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+      </div>
+      <br><br>
+      The Magic Carpets of Aladin!
+    </div>
+  `, {
+    autoPan: true,
+    autoPanPadding: [30, 30],
+    offset: L.point(0, 0)
+  });
+

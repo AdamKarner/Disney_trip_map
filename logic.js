@@ -13,8 +13,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Creating a new marker:
 // We pass in some initial options, and then add the marker to the map by using the addTo() method.
-let marker = L.marker([28.418717, -81.581211], {
-  draggable: true,
+let main_marker = L.marker([28.418717, -81.581211], {
+  draggable: false,
   title: "Magic Kingdom"
 }).addTo(myMap);
 
@@ -28,7 +28,7 @@ let marker = L.marker([28.418717, -81.581211], {
 //               offset: L.point(-200, -200) // Shifts the popup leftward
 //             });
 
-marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241003_140735(0).jpg' alt='Disney' style='width:100%; height:auto; max-width:300px;'><br><br>" +
+main_marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241003_140735(0).jpg' alt='Disney' style='width:100%; height:auto; max-width:300px;'><br><br>" +
   "Hey there, Adalyn and Oliver!<br><br>" +
   "Gosh, it’s great to see you here at Disney World! I just know we’re gonna have a whole lot of fun together. So grab your mouse ears and get ready for some magical adventures with all your favorite pals!<br><br>" +
   "See ya real soon!<br><br>" +
@@ -36,4 +36,44 @@ marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Disney_
     autoPan: true,
     autoPanPadding: [30, 30], // Adjust the padding for auto panning
     offset: L.point(0,0) // Adjust offset as needed
+  });
+
+  let cinderellas_castle_marker = L.marker([28.41937,-81.58117],{
+    draggable: false,
+    title: "Fireworks at Cinderella's Castle"
+  }).addTo(myMap);
+
+  cinderellas_castle_marker.bindPopup(`
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; gap: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_195506.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_195506.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_213819.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214527.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_220245.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+      </div>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214025.jpg' target='_blank'>
+        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214025.jpg' alt='Disney' style='width:100px; height:auto;'>
+      </a>
+      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' target='_blank'>
+        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/20241001_214455.jpg' alt='Disney' style='width:100px; height:auto;'>
+      </a>
+      </div>
+      <br><br>
+      Mickey's Halloween Party Fireworks Extravaganza!
+    </div>
+  `, {
+    autoPan: true,
+    autoPanPadding: [30, 30],
+    offset: L.point(0, 0)
   });

@@ -2,7 +2,7 @@
 // We set the longitude, latitude, and starting zoom level.
 let myMap = L.map("map", {
   center: [28.418717, -81.581211],
-  zoom: 25
+  zoom: 17
 });
 
 // Adding a tile layer (the background map image) to our map:
@@ -17,6 +17,13 @@ let main_marker = L.marker([28.418717, -81.581211], {
   draggable: false,
   title: "Magic Kingdom"
 }).addTo(myMap);
+
+main_marker.bindTooltip("Start Here!", {
+  permanent: true,    // Keep the text always visible
+  direction: "bottom", // Position the text below the marker
+  offset: L.point(-16, 28), // Adjust the vertical offset (move it down a bit)
+  className: 'custom-tooltip' // Optional: custom class for additional styling
+}).openTooltip();
 
 // Binding a popup to our marker with options for offset and auto panning
 // marker.bindPopup("Hey there, Adalyn and Oliver!<br><br>" +
@@ -113,4 +120,35 @@ main_marker.bindPopup("<img src='https://raw.githubusercontent.com/AdamKarner/Di
     autoPanPadding: [30, 30],
     offset: L.point(0, 0)
   });
+  let chef_mickey_marker = L.marker([28.41438,-81.57442],{
+    draggable: false,
+    title: "Chef Mickey's"
+  }).addTo(myMap);
 
+  chef_mickey_marker.bindPopup(`
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; gap: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2259.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2259.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        
+      <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_3181.jpg.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_3181.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2267.jpg' target='_blank'>
+          <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2267.jpg' alt='Disney' style='width:100px; height:auto;'>
+        </a>
+        <a href='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2260.jpg' target='_blank'>
+        <img src='https://raw.githubusercontent.com/AdamKarner/Disney_trip_map/refs/heads/main/static/images/IMG_2260.jpg' alt='Disney' style='width:100px; height:auto;'>
+      </a>
+      </div>
+      <br><br>
+      Charactor Meet and Greet at Chef Mickey's!
+    </div>
+  `, {
+    autoPan: true,
+    autoPanPadding: [30, 30],
+    offset: L.point(0, 0)
+  });
